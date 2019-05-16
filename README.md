@@ -53,9 +53,9 @@ win+r certmgr.msc
 
 ![avatar](img/firefox_ca.PNG)
 测试ip+https结果如下：
-![avatar](img/ff_ok01.PNG)
+![avatar](img/ff_ok01.png)
 ![avatar](img/ff_ok02.PNG)
-![avatar](img/ff_ok03.PNG)
+![avatar](img/ff_ok03.png)
 
 对于IE，添加根证书的操作如下：  
 Internet选项-->内容-->受信任的根证书颁发机构-->证书，导入ca.crt，见下图
