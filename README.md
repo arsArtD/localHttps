@@ -21,6 +21,7 @@ server.req 生成服务端crt的请求文件，忽略
 localhost, 本地实际ip访问（需要修改conf/local.ext中的ip才能支持）
 
 下面以apache安装为例：
+```
 Listen 4433
 <VirtualHost  *:4433>
     ###SiteName safe.cn
@@ -37,6 +38,7 @@ Listen 4433
     #TransferLog "../../logs/Apache/safecn-access.log"
     #ServerName  safe.cn
 </VirtualHost>
+```
 
 其中server.crt, server.key就是通过mkcert.sh生成的证书文件
 
