@@ -24,19 +24,15 @@ localhost, 本地实际ip访问（需要修改conf/local.ext中的ip才能支持
 ```
 Listen 4433
 <VirtualHost  *:4433>
-    ###SiteName safe.cn
     SSLEngine on
-    SSLCertificateFile "${SRVROOT}/conf/ssl/safe.cn/server.crt"
-    SSLCertificateKeyFile "${SRVROOT}/conf/ssl/safe.cn/server.key"
-    DocumentRoot "E:/workspace/php_workspace/traffic"
-    <Directory "E:/workspace/php_workspace/traffic">
+    SSLCertificateFile "${SRVROOT}/conf/ssl/testHttps/server.crt"
+    SSLCertificateKeyFile "${SRVROOT}/conf/ssl/testHttps/server.key"
+    DocumentRoot "E:/testHttps"
+    <Directory "E:/testHttps">
         Options Indexes FollowSymLinks Includes ExecCGI
         AllowOverride all
         Require all granted
     </Directory>
-    #ErrorLog    "../../logs/Apache/safecn-error.log"
-    #TransferLog "../../logs/Apache/safecn-access.log"
-    #ServerName  safe.cn
 </VirtualHost>
 ```
 
